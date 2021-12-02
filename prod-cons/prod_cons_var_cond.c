@@ -12,8 +12,8 @@
 #define BUF_LEN         3
 
 pthread_mutex_t mutex; // folosit pentru incrementarea si decrementarea marimii buffer-ului
-pthread_cond_t full_cond; // cand buffer-ul este gol
-pthread_cond_t empty_cond; // cand buffer-ul este plin
+pthread_cond_t full_cond; // cand buffer-ul este plin
+pthread_cond_t empty_cond; // cand buffer-ul este gol
 
 char buffer[BUF_LEN];
 int buf_cnt = 0;
